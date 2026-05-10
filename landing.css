@@ -147,6 +147,14 @@ h1 {
     linear-gradient(135deg, #246bfe, #16a36f);
 }
 
+.speaker {
+  --scene:
+    radial-gradient(circle at 34% 42%, #21d4a2 0 14px, transparent 15px),
+    radial-gradient(circle at 68% 58%, #ffb703 0 11px, transparent 12px),
+    linear-gradient(90deg, transparent 46%, rgba(255, 255, 255, 0.42) 47% 53%, transparent 54%),
+    linear-gradient(135deg, #14213d, #331832);
+}
+
 .brew {
   --scene:
     radial-gradient(circle at 32% 42%, #f7efe3 0 16px, transparent 17px),
@@ -173,6 +181,10 @@ h1 {
 .demo-card h2 {
   font-size: 1.35rem;
   line-height: 1.05;
+}
+
+.featured h2 {
+  font-size: 1.65rem;
 }
 
 .demo-card p {
