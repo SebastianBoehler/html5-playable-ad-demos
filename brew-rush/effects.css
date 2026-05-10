@@ -1,0 +1,100 @@
+.playfield.bad-hit {
+  animation: bad-hit 360ms ease-in-out;
+}
+
+.playfield.good-hit .brand-ticket {
+  animation: good-pulse 300ms ease-out;
+}
+
+.playfield.order-complete .brand-ticket {
+  animation: order-pop 520ms ease-out;
+}
+
+.quality.bad {
+  animation: quality-hit 420ms ease-out;
+}
+
+.drop.target {
+  background: linear-gradient(145deg, #1fd0a9, var(--accent));
+  box-shadow: 0 16px 34px rgba(14, 143, 120, 0.3);
+}
+
+.drop.target::after {
+  content: "NEXT";
+  position: absolute;
+  right: -14px;
+  top: -7px;
+  padding: 4px 7px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  color: #fff;
+  background: #0b6f5d;
+  font-size: 0.62rem;
+  font-weight: 950;
+  transform: rotate(45deg);
+}
+
+.drop.decoy {
+  background: linear-gradient(145deg, #ff7d7d, var(--bad));
+  box-shadow: 0 14px 30px rgba(209, 75, 75, 0.34);
+}
+
+.drop.decoy::after {
+  content: "!";
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  background: #a92537;
+  font-size: 0.9rem;
+  font-weight: 950;
+  transform: rotate(45deg);
+}
+
+.cup.hit {
+  animation: cup-hit 260ms ease-out;
+}
+
+.cup.bad {
+  animation: cup-bad 360ms ease-in-out;
+}
+
+.splash {
+  animation: splash 760ms ease-out forwards;
+}
+
+@keyframes cup-hit {
+  50% { transform: translateX(-50%) scale(1.08); }
+}
+
+@keyframes cup-bad {
+  25%, 75% { transform: translateX(calc(-50% - 12px)); }
+  50% { transform: translateX(calc(-50% + 12px)); filter: drop-shadow(0 0 18px rgba(209, 75, 75, 0.6)); }
+}
+
+@keyframes bad-hit {
+  20%, 60% { transform: translateX(-12px) rotate(-0.7deg); }
+  40%, 80% { transform: translateX(12px) rotate(0.7deg); }
+}
+
+@keyframes quality-hit {
+  50% { box-shadow: 0 0 0 6px rgba(209, 75, 75, 0.22), inset 0 0 0 1px var(--bad); }
+}
+
+@keyframes good-pulse {
+  50% { transform: rotate(-2deg) scale(1.035); }
+}
+
+@keyframes order-pop {
+  40% { transform: rotate(-2deg) scale(1.08); box-shadow: 0 18px 36px rgba(14, 143, 120, 0.24); }
+}
+
+@keyframes splash {
+  to { opacity: 0; transform: translateY(-52px) scale(1.1); }
+}
