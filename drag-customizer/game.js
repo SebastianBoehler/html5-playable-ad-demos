@@ -124,7 +124,7 @@ function addSticker(sticker, localX, localY, rect) {
 function finishCustomization() {
   const stickerNames = placedStickers.map((item) => item.name);
   const detail = stickerNames.length ? stickerNames.join(", ") : "no stickers";
-  summary.textContent = `Volt Runner One, ${selectedColor.name}, ${detail}. Demo price: EUR 129.`;
+  summary.textContent = `Volt Runner Studio pair, ${selectedColor.name}, ${detail}. Launch price: EUR 129.`;
   cartStatus.textContent = "";
   shopButton.textContent = "Add to cart";
   shopButton.disabled = false;
@@ -167,7 +167,7 @@ function showSprintUnlocks() {
 }
 
 function addToCart() {
-  cartStatus.textContent = "Added to demo cart. This is where the ad would hand off to checkout.";
+  cartStatus.textContent = "Added to demo cart. The playable ad would hand off to checkout here.";
   shopButton.textContent = "Added";
   shopButton.disabled = true;
 }

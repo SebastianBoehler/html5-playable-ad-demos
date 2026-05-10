@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Volt Runner Playable Ad Customizer</title>
+    <title>Sneaker Studio Playable Ad</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23246bfe'/%3E%3Cpath d='M15 40c13 5 30 6 43 2-5-11-14-14-24-14-6 0-10-4-13-12-3 10-7 18-15 22 2 1 5 2 9 2z' fill='white'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="product.css" />
   </head>
   <body>
-    <main class="app" aria-label="Drag-and-Drop Product Customizer">
+    <main class="app" aria-label="Sneaker Studio Product Customizer">
       <section class="customizer">
         <header class="topbar">
           <div>
-            <span class="eyebrow">Volt Athletics ad</span>
-            <h1>Volt Runner One</h1>
-            <p class="product-subtitle">Custom trainer · EUR 129</p>
+            <span class="eyebrow">Sneaker Studio ad</span>
+            <h1>Volt Runner Studio</h1>
+            <p class="product-subtitle">Custom trainer · launch price EUR 129</p>
           </div>
-          <button id="finishButton" class="finish-button" type="button">Finish</button>
+          <button id="finishButton" class="finish-button" type="button">Create card</button>
         </header>
 
         <section id="productStage" class="product-stage" aria-label="Drop stickers on the product">
           <div class="ad-chip-row" aria-label="Product highlights">
-            <span>48h delivery</span>
-            <span>Made to order</span>
-            <span>Mobile exclusive</span>
+            <span>Knit upper</span>
+            <span>Foam sole</span>
+            <span>Drop exclusive</span>
           </div>
           <div id="product" class="product" style="--product-color: #18b883">
             <svg viewBox="0 0 360 230" role="img" aria-label="Volt Runner One custom sneaker preview">
@@ -63,15 +63,15 @@
 
         <div id="startScreen" class="screen">
           <p class="eyebrow">Playable product ad</p>
-          <h2>Design your Volt Runner</h2>
-          <p class="copy">Tap a color, drag patches onto the shoe, then turn your design into a product card.</p>
+          <h2>Build your studio pair</h2>
+          <p class="copy">Choose a material color, place patches, then turn the shoe into a launch product card.</p>
           <p id="unlockNote" class="unlock-note"></p>
           <button id="startButton" class="primary-button" type="button">Start</button>
         </div>
 
         <div id="endScreen" class="screen hidden">
-          <p class="eyebrow">Ready to launch</p>
-          <h2>Your Volt Runner is ready</h2>
+          <p class="eyebrow">Product card ready</p>
+          <h2>Your studio pair is ready</h2>
           <p id="summary" class="copy"></p>
           <p id="cartStatus" class="cart-status" aria-live="polite"></p>
           <div class="end-actions">
