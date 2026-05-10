@@ -250,7 +250,7 @@
   }
 
   function loop(now) {
-    const dt = Math.min(0.033, (now - lastTime) / 1000 || 0);
+    const dt = Math.min(0.5, (now - lastTime) / 1000 || 0);
     lastTime = now;
     update(dt);
     render();

@@ -6,9 +6,9 @@ window.SpeakerConfig = {
     cost: 70,
     upgradeBase: 55,
     levels: [
-      { range: 88, damage: 22, rate: 0.82, color: "#21d4a2" },
-      { range: 108, damage: 34, rate: 0.68, color: "#5fa8ff" },
-      { range: 130, damage: 48, rate: 0.54, color: "#ffb703" }
+      { range: 92, damage: 28, rate: 0.68, color: "#21d4a2" },
+      { range: 114, damage: 42, rate: 0.55, color: "#5fa8ff" },
+      { range: 136, damage: 60, rate: 0.44, color: "#ffb703" }
     ]
   },
   path: [
@@ -27,31 +27,31 @@ window.SpeakerConfig = {
     { id: "e", x: 330, y: 548 }
   ],
   enemies: {
-    static: { hp: 58, speed: 48, reward: 18, damage: 1, radius: 15, color: "#ff5c75" },
-    drone: { hp: 42, speed: 72, reward: 20, damage: 1, radius: 13, color: "#9b7cff" },
-    crusher: { hp: 130, speed: 34, reward: 34, damage: 2, radius: 19, color: "#ff9f1c" }
+    static: { hp: 48, speed: 82, reward: 18, damage: 1, radius: 15, color: "#ff5c75" },
+    drone: { hp: 40, speed: 112, reward: 20, damage: 1, radius: 13, color: "#9b7cff" },
+    crusher: { hp: 112, speed: 58, reward: 34, damage: 2, radius: 19, color: "#ff9f1c" }
   },
   waves: [
     {
       name: "Static Swarm",
       groups: [
-        { type: "static", count: 6, gap: 0.86 },
-        { type: "drone", count: 3, gap: 1.02 }
+        { type: "static", count: 6, gap: 0.62 },
+        { type: "drone", count: 3, gap: 0.74 }
       ]
     },
     {
       name: "Notification Rush",
       groups: [
-        { type: "drone", count: 7, gap: 0.72 },
-        { type: "static", count: 6, gap: 0.76 }
+        { type: "drone", count: 7, gap: 0.58 },
+        { type: "static", count: 6, gap: 0.62 }
       ]
     },
     {
       name: "Bass Breaker",
       groups: [
-        { type: "static", count: 5, gap: 0.66 },
-        { type: "crusher", count: 3, gap: 1.12 },
-        { type: "drone", count: 6, gap: 0.62 }
+        { type: "static", count: 5, gap: 0.52 },
+        { type: "crusher", count: 3, gap: 0.9 },
+        { type: "drone", count: 6, gap: 0.5 }
       ]
     }
   ],
