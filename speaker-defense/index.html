@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Speaker Defense Playable Ad</title>
+    <meta name="description" content="A mobile-first tower defense playable ad for a fictional portable speaker." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213d'/%3E%3Crect x='19' y='12' width='26' height='40' rx='8' fill='white'/%3E%3Ccircle cx='32' cy='25' r='7' fill='%2321d4a2'/%3E%3Ccircle cx='32' cy='41' r='5' fill='%23ffb703'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Speaker Defense tower game">
+      <section class="game-shell">
+        <header class="topbar">
+          <div>
+            <span class="label">Wave</span>
+            <strong id="waveText">1/3</strong>
+          </div>
+          <div>
+            <span class="label">Coins</span>
+            <strong id="coinText">160</strong>
+          </div>
+          <div>
+            <span class="label">Party</span>
+            <strong id="lifeText">10</strong>
+          </div>
+        </header>
+
+        <div class="stage-wrap">
+          <canvas id="gameCanvas" width="390" height="640" aria-label="Tap pads to place and upgrade speakers"></canvas>
+          <div id="toast" class="toast" aria-live="polite">Tap a glowing pad to place a speaker</div>
+
+          <section id="startScreen" class="screen">
+            <p class="eyebrow">Playable speaker ad</p>
+            <h1>Speaker Defense</h1>
+            <p class="copy">Build a rooftop sound system. Stop noise waves before they crash the party.</p>
+            <div class="product-shot" aria-hidden="true">
+              <span></span>
+            </div>
+            <button id="startButton" class="primary-button" type="button">Start defense</button>
+          </section>
+
+          <section id="endScreen" class="screen hidden">
+            <p id="endEyebrow" class="eyebrow">Party saved</p>
+            <h2 id="endTitle">Bassline secured</h2>
+            <p id="endCopy" class="copy"></p>
+            <div class="end-actions">
+              <button id="ctaButton" class="primary-button" type="button">Build speaker kit</button>
+              <button id="restartButton" class="secondary-button" type="button">Play again</button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="audio.js"></script>
+    <script src="sprites.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
